@@ -1,17 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda de VideoJuegos</title>
-</head>
-<body>
-    <h1>Bienvenido  la Tienda de Videojuegos</h1>
-    <p>Explora nuestro catalogo y disfruta.</p>
+{% extends "base.html" %}
+{% load static %}
+{% block title %} Tienda de VideoJuegos - Inicio{% endblock title %}
 
-    <footer>
-        <p>2025 Tienda de Videojuegos</p>
-        <a href="{% url 'contacto' %}">Contacto</a>
-    </footer>
-</body>
-</html>
+{% block content %}
+{% endblock content %}
