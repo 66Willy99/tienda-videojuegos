@@ -1,0 +1,103 @@
+/* =========================================================
+   RESET Y LAYOUT BASE
+========================================================= */
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* El body ocupa toda la pantalla */
+    background-color: var(--bs-body-bg, #f8f9fa);
+    /* fallback */
+    color: var(--bs-body-color, #212529);
+}
+
+/* =========================================================
+   HEADER FIJO
+========================================================= */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1020;
+    /* encima de todo */
+}
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+.navbar {
+    background-color: #212529;
+    /* bg-dark de Bootstrap */
+}
+
+/* Botón modo oscuro */
+#toggle-theme {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Logo de la navbar */
+.navbar-brand img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.navbar-brand span {
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 5px #000;
+}
+
+/* =========================================================
+   MAIN
+========================================================= */
+/*main {
+/*    flex: 1;
+    /* Ocupa todo el espacio disponible */
+/*    margin-top: 80px;
+    /* Deja hueco para el header fijo */
+/*    overflow: visible;
+    /* Scroll normal */
+/*}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+footer {
+    width: 100%;
+    background-color: #212529;
+    /* bg-dark */
+    color: #fff;
+    margin-top: auto;
+    /* Empuja el footer al fondo */
+}
+
+/* Links del footer */
+footer a {
+    color: #ced4da;
+    /* text-white-50 */
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Pequeño espaciado y tipografía en footer */
+footer .small {
+    font-size: 0.8rem;
+}
+
+footer h6 {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
