@@ -11,7 +11,7 @@
         {% for juego in lista_juegos %}
             <div class="col">
                 <div class="card h-100">
-                    <img src="{% static "img/logo.png" %}" alt="Imagen Generica" class="card-img-top">
+                    <img src="{% static 'img/portadas/' %}{{ juego.imagen }}" alt="Imagen Generica" class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">{{ juego.nombre }}</h5>
                         <p class="card-text">Plataformas: {{ juego.plataforma }}</p>
