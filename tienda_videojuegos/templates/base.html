@@ -42,10 +42,10 @@
                 <!-- Contenido colapsable -->
                 <div class="collapse navbar-collapse" id="navbarPF">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a href="{% url "home" %}" class="nav-link active text-center">Inicio</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link text-center">Tienda</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link text-center">Noticias</a></li>
-                        <li class="nav-item"><a href="{% url "contacto" %}" class="nav-link text-center">Contacto</a></li>
+                        <li class="nav-item"><a href="{% url "home" %}" class="nav-link {% if request.path == '/' %}active{% endif %} text-center">Inicio</a></li>
+                        <li class="nav-item"><a href="{% url "catalogo" %}" class="nav-link  {% if request.path == '/catalogo/' %}active{% endif %} text-center">Catalogo</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link  {% if request.path == '/noticias/' %}active{% endif %} text-center">Noticias</a></li>
+                        <li class="nav-item"><a href="{% url "contacto" %}" class="nav-link  {% if request.path == '/contacto/' %}active{% endif %} text-center">Contacto</a></li>
                     </ul>
     
                     <!-- Formulario de busqueda -->
