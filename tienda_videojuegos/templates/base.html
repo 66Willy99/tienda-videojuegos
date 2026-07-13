@@ -49,8 +49,8 @@
                     </ul>
     
                     <!-- Formulario de busqueda -->
-                    <form action="" class="d-flex me-3" role="search">
-                        <input type="search" class="form-control me-2" placeholder="Buscar..." aria-label="Buscar">
+                    <form action="{% url 'buscar_juegos' %}" class="d-flex me-3" role="search" method="get">
+                        <input type="search" class="form-control me-2" placeholder="Buscar..." aria-label="Buscar" value="{{ request.GET.q|default:'' }}" name="q">
                         <button class="btn btn-outline-info" type="submit">Buscar</button>
                     </form>
                 </div>
